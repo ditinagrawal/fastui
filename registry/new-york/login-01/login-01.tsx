@@ -30,17 +30,17 @@ export const Login01 = () => {
         <div className="flex flex-col gap-6">
           <Card>
             <CardHeader className="text-center">
-              <CardTitle className="text-xl">Welcome back</CardTitle>
-              <CardDescription>Login with your Github or Email account</CardDescription>
+              <CardTitle className="text-xl">Welcome back!</CardTitle>
+              <CardDescription>Login with your Socials or Email account</CardDescription>
             </CardHeader>
             <CardContent>
               <form>
                 <div className="grid gap-6">
                   <div className="flex flex-col gap-4">
-                    <Button variant="outline" className="w-full">
+                    <Button type="button" variant="outline" className="w-full">
                       <FaGoogle className="size-4" /> Login with Google
                     </Button>
-                    <Button variant="outline" className="w-full">
+                    <Button type="button" variant="outline" className="w-full">
                       <FaGithub className="size-4" /> Login with Github
                     </Button>
                   </div>
@@ -66,7 +66,7 @@ export const Login01 = () => {
           By clicking continue, you agree to our{" "}
           <Link href="" target="_blank">
             Terms of Service
-          </Link>
+          </Link>{" "}
           and{" "}
           <Link href="" target="_blank">
             Privacy Policy
