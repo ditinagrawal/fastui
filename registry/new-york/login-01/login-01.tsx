@@ -1,0 +1,79 @@
+import Link from "next/link";
+
+import { MoveLeftIcon, SendIcon, ZapIcon } from "lucide-react";
+import { FaGithub, FaGoogle } from "react-icons/fa";
+
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
+export const Login01 = () => {
+  return (
+    <div className="relative flex min-h-svh flex-col items-center justify-center">
+      <Link
+        href={"/"}
+        className={buttonVariants({
+          variant: "outline",
+          size: "sm",
+          className: "absolute top-4 left-4",
+        })}
+      >
+        <MoveLeftIcon className="size-4" /> Back
+      </Link>
+      <div className="flex w-full max-w-sm flex-col gap-6">
+        <Link href={"/"} className="flex items-center gap-2 self-center text-xl font-bold">
+          <ZapIcon className="fill-primary size-6" />
+          FastUI
+        </Link>
+        {/* -------------Form ------------- */}
+        <div className="flex flex-col gap-6">
+          <Card>
+            <CardHeader className="text-center">
+              <CardTitle className="text-xl">Welcome back</CardTitle>
+              <CardDescription>Login with your Github or Email account</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form>
+                <div className="grid gap-6">
+                  <div className="flex flex-col gap-4">
+                    <Button variant="outline" className="w-full">
+                      <FaGoogle className="size-4" /> Login with Google
+                    </Button>
+                    <Button variant="outline" className="w-full">
+                      <FaGithub className="size-4" /> Login with Github
+                    </Button>
+                  </div>
+                  <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
+                    <span className="bg-card text-muted-foreground relative z-10 px-2">Or continue with</span>
+                  </div>
+                  <div className="grid gap-6">
+                    <div className="grid gap-3">
+                      <Label htmlFor="email">Email</Label>
+                      <Input id="email" type="email" placeholder="your@email.com" required />
+                    </div>
+                    <Button type="submit" className="w-full">
+                      <SendIcon className="size-4" /> Login with Email
+                    </Button>
+                  </div>
+                </div>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+        {/* -------------Form ------------- */}
+        <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
+          By clicking continue, you agree to our{" "}
+          <Link href="" target="_blank">
+            Terms of Service
+          </Link>
+          and{" "}
+          <Link href="" target="_blank">
+            Privacy Policy
+          </Link>
+          .
+        </div>
+      </div>
+    </div>
+  );
+};

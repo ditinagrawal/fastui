@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "fastui",
+  "homepage": "https://fastui.ditin.in",
+  "items": [
+    {
+      "name": "login-01",
+      "type": "registry:block",
+      "title": "Login 01",
+      "description": "A simple login component.",
+      "files": [
+        {
+          "path": "registry/new-york/login-01/login-01.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
