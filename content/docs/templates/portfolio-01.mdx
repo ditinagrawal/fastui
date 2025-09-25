@@ -1,0 +1,167 @@
+---
+title: Portfolio 01
+description: A stunning, modern portfolio template to kickstart your personal or professional website.
+---
+
+![Test](/templates/portfolio-01.png)
+
+## Portfolio — Ditin Agrawal
+
+A fast, modern, and responsive portfolio built with Next.js App Router and TypeScript. It highlights projects, services, testimonials, a working contact form, and a complete MDX-powered blog — all packaged in a clean UI with smooth motion.
+
+### Source Code
+
+- Visit: [Github](https://github.com/ditinagrawal/portfolio)
+- Download: [Code](https://github.com/ditinagrawal/portfolio/archive/refs/heads/main.zip)
+
+### Live Demo
+
+- Visit: [portfolio.ditin.in](https://portfolio.ditin.in)
+
+## Highlights
+
+### Portfolio
+
+- **Refined design**: Professional look with subtle animations
+- **Fully responsive**: Looks great on phones, tablets, and desktops
+- **Performance-focused**: App Router architecture and optimized assets
+- **SEO-ready**: Metadata, Open Graph, and Twitter cards
+- **Interactive details**: Thoughtful transitions and micro-interactions
+- **Contact flow**: API endpoint for inquiries
+- **Projects**: Rich case-study style showcases
+- **Services**: Clear overview of offerings
+- **Testimonials**: Client quotes for credibility
+- **Social links**: Quick access to profiles
+
+### Blog
+
+- **MDX-first**: Write posts with React components
+- **Code highlighting**: Beautiful code blocks
+- **Table of contents**: Auto-generated from headings
+- **Reading progress**: Visual progress bar
+- **Author cards**: Clean author presentation
+- **Tags & filters**: Organize and explore posts
+- **Mobile-optimized**: Great reading on small screens
+- **Share-ready**: Social sharing metadata and UI
+
+## Tech Stack
+
+### Core
+
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Runtime**: React 19
+
+### Styling & UI
+
+- **Styling**: Tailwind CSS with PostCSS
+- **UI**: Shadcn UI
+- **Icons**: Tabler Icons, Lucide React
+- **Animations**: Motion (successor to Framer Motion)
+
+### Content
+
+- **Blog engine**: Fumadocs + MDX
+- **Typography**: Tailwind Typography
+
+### DX
+
+- **Package manager**: Bun (or npm)
+- **Linting/formatting**: ESLint 9 + Prettier (Tailwind plugin)
+- **Validation**: Zod
+
+## Structure (high-level)
+
+```text
+portfolio/
+├─ app/                # App Router pages, API routes, layout
+│  ├─ api/send-msg/    # Contact form endpoint
+│  ├─ blog/            # Blog routes and layout
+│  ├─ globals.css      # Global styles
+│  └─ layout.tsx       # Root layout + metadata
+├─ components/         # UI, blog, and page sections
+│  ├─ blog/            # Author card, TOC, tag filter, etc.
+│  ├─ home/            # Hero, about, projects, services, testimonials
+│  └─ ui/              # Radix-based reusable components
+├─ content/blog/       # MDX posts
+├─ lib/                # Site config, authors, utilities
+├─ public/             # Static assets (og, thumbnails, fonts, etc.)
+├─ mdx-components.tsx  # MDX component mapping
+└─ source.config.ts    # Fumadocs configuration
+```
+
+## Setup
+
+### Prerequisites
+
+- Node.js 18+ or Bun
+- Git
+
+### Install & Run
+
+```bash
+# Clone
+git clone https://github.com/ditinagrawal/portfolio.git
+cd portfolio
+
+# Install
+bun install    # or: npm install
+
+# Dev server
+bun dev        # or: npm run dev
+
+# Open http://localhost:3000
+```
+
+## Customize
+
+Make it yours by updating these:
+
+### Portfolio content
+
+- `app/layout.tsx`: Metadata, title, description
+- `lib/site.ts`: Site configuration and URLs
+- `components/home/about/index.tsx`: About content
+- `components/home/experience/index.tsx`: Work history
+- `components/home/projects/projects.json`: Projects data
+- `components/home/services/services.json`: Services
+- `components/home/testimonials/testimonials.json`: Testimonials
+- `public/avatar.jpg`: Profile image
+- `public/og.webp`: Open Graph image
+
+### Blog content
+
+- `content/blog/`: MDX posts
+- `lib/authors.ts`: Author info
+- `app/blog/metadata.ts`: Blog metadata
+- `source.config.ts`: Fumadocs settings
+
+### Styling
+
+- `app/globals.css`: Global tokens and CSS variables
+- Tailwind classes in components for quick styling
+- `components/ui/`: Design-system components
+
+## Deployment
+
+### Vercel (recommended)
+
+1. Push to GitHub
+2. Import on Vercel
+3. Deploy — zero config
+
+### Other platforms
+
+- Netlify, Railway, DigitalOcean App Platform, AWS Amplify
+
+## Scripts
+
+- `bun dev` / `npm run dev`: Start development server
+- `bun build` / `npm run build`: Build for production
+- `bun start` / `npm start`: Run production server
+- `bun lint` / `npm run lint`: Lint
+- `bun install`: Install deps and run MDX setup
+
+---
+
+See it in action at [portfolio.ditin.in](https://portfolio.ditin.in). If this template helps, consider starring the repo!
