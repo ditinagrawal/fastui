@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+img {
+  @apply rounded-md;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

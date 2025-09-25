@@ -1,0 +1,115 @@
+---
+title: Linktree
+description: A clean, minimal link-in-bio template to centralize your social and professional links.
+---
+
+![Preview](/templates/linktree.png)
+
+## Linkz — Personal Link Tree
+
+A modern, minimalist link-in-bio built with Next.js App Router and TypeScript. Use it as a central hub for your professional links, social profiles, and important resources — with responsive layout, subtle animations, and a tasteful dot-pattern background.
+
+### Source Code
+
+- Repo: [github.com/ditinagrawal/linkz](https://github.com/ditinagrawal/linkz)
+- Download: [ZIP (main)](https://github.com/ditinagrawal/linkz/archive/refs/heads/main.zip)
+
+### Live Demo
+
+- Visit: [ditin.in](https://ditin.in)
+
+## Features
+
+- **Minimal aesthetic**: Clean layout with gentle motion
+- **Responsive**: Looks great on mobile, tablet, and desktop
+- **Interactive touches**: Hover states and smooth transitions
+- **Social links**: GitHub, LinkedIn, Twitter/X, YouTube, email
+- **Pro links**: Portfolio, resume, and featured projects
+- **Availability badge**: Optional current status indicator
+- **Dot pattern background**: Lightweight masked background effect
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Runtime**: React 19
+- **Styling**: Tailwind CSS 4
+- **Icons**: Tabler Icons React
+- **Animation**: Motion / Framer Motion
+- **Language**: TypeScript
+- **Package Manager**: Bun (or npm)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ or Bun
+- Git
+
+### Install & Run
+
+```bash
+# Clone
+git clone https://github.com/ditinagrawal/linkz.git
+cd linkz
+
+# Install
+bun install    # or: npm install
+
+# Dev server
+bun dev        # or: npm run dev
+
+# Open http://localhost:3000
+```
+
+## Project Structure (overview)
+
+```text
+linkz/
+├─ app/                # App Router, root layout, and page
+│  ├─ globals.css      # Global styles
+│  └─ layout.tsx       # Root layout
+├─ components/         # UI pieces
+│  ├─ dot-pattern.tsx  # Background pattern
+│  ├─ info.tsx         # Profile intro
+│  ├─ links.tsx        # Main action links
+│  └─ socials.tsx      # Social links
+├─ lib/                # Utilities
+│  └─ utils.ts         # Helpers
+├─ public/             # Static assets (avatar, og, preview)
+└─ package.json        # Scripts and dependencies
+```
+
+## Customization
+
+### Personal info
+
+- `components/info.tsx`: Name, title, summary, avatar
+- `components/socials.tsx`: Social profile URLs
+- `components/links.tsx`: Main actions (portfolio, resume, projects)
+- `app/page.tsx`: Optional “currently building”/status area
+
+### Styling
+
+- Tailwind classes in components for colors, spacing, and layout
+- `app/globals.css` for global tokens and small visual tweaks
+
+### Images
+
+- Replace in `public/`:
+  - `avatar.jpg`: Your profile photo (≈120×120px recommended)
+  - `preview.png`: Screenshot for README/demos
+  - `og.webp`: Open Graph image for social sharing
+
+## Deployment
+
+### Vercel (recommended)
+
+1. Push to GitHub
+2. Import the repo in Vercel
+3. Deploy — zero config required
+
+### Alternatives
+
+- Netlify, Railway, Render, AWS Amplify
+
+If this template helps, consider leaving a star on GitHub!

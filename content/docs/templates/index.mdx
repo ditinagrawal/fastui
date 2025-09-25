@@ -16,13 +16,33 @@ import { Button } from "@/components/ui/button";
         <Badge className="bg-green-400">Free</Badge>
       </div>
       <div className="flex gap-2">
-        <Button asChild>
+        <Button size="sm" asChild>
           <Link href="https://portfolio.ditin.in" target="_blank">
             Preview
           </Link>
         </Button>
-        <Button asChild>
+        <Button size="sm" asChild>
           <Link href="/docs/templates/portfolio-01#source-code">Download</Link>
+        </Button>
+      </div>
+    </div>
+  </Card>
+
+  <Card title="LinkTree">
+    <div>![Test](/templates/linktree.png)</div>
+    <div className="flex items-center justify-between">
+      <div className="flex h-fit gap-2">
+        <Badge>LinkTree</Badge>
+        <Badge className="bg-green-400">Free</Badge>
+      </div>
+      <div className="flex gap-2">
+        <Button size="sm" asChild>
+          <Link href="https://ditin.in" target="_blank">
+            Preview
+          </Link>
+        </Button>
+        <Button size="sm" asChild>
+          <Link href="/docs/templates/linktree#source-code">Download</Link>
         </Button>
       </div>
     </div>
